@@ -6,6 +6,14 @@ import os
 import threading
 from datetime import datetime
 
+try:  # 修复 Windows 下缩放导致 tkinter 字体模糊的问题
+    import ctypes
+    if 'windll' in dir(ctypes):
+        PROCESS_PER_MONITOR_DPI_AWARE = 2
+        ctypes.windll.shcore.SetProcessDpiAwareness(PROCESS_PER_MONITOR_DPI_AWARE)
+except:
+    pass
+
 # ──────────────────────────────────────────────────────────────────────────────
 # 深色主题颜色方案
 # ──────────────────────────────────────────────────────────────────────────────
