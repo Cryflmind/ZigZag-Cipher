@@ -27,3 +27,12 @@ pip install numpy Pillow
 ```cmd
 pip install -r requirements.txt
 ```
+
+# 主界面
+![主界面](main.png)
+
+# 运行截图
+![主界面](example1.png)
+![主界面](example2.png)
+![主界面](example3.png)
+![主界面](example4.png)
